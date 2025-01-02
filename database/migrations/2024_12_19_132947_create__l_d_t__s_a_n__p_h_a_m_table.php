@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('ldtMaSanPham',255)->unique();
             $table->string('ldtTenSanPham',255);
-            $table->string('ldtlHinhAnh',255);
+            $table->string('ldtHinhAnh',255);
             $table->integer('ldtSoLuong');
             $table->float('ldtDonGia');
-            $table->bigInteger('ldtMaLoai')->references('id')->on('ldt_loai_san_pham');
+            $table->bigInteger('ldtMaLoai')->references('id')->on('LDT_LOAI_SAN');
             $table->tinyInteger('ldtTrangThai');
             $table->timestamps();
         });

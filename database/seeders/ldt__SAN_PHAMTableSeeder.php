@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ldt__SAN_PHAMTableSeeder extends Seeder
 {
@@ -12,16 +13,16 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'VP001',
             'ldtTenSanPham'=>'cay phu quy',
             'ldtHinhAnh'=>'images/san-pham/VP001',
             'ldtSoLuong'=>100,
             'ldtDonGia'=>69900,
-            'ldttMaLoai'=>1,
+            'ldtMaLoai'=>1,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'VP002',
             'ldtTenSanPham'=>'cay dai phu gia',
             'ldtHinhAnh'=>'images/san-pham/VP002',
@@ -30,7 +31,7 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
             'ldtMaLoai'=>1,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'VP003',
             'ldtTenSanPham'=>'cay hanh phuc',
             'ldtHinhAnh'=>'images/san-pham/VP003',
@@ -39,7 +40,7 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
             'ldtMaLoai'=>1,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'VP004',
             'ldtTenSanPham'=>'cay van loc',
             'ldtHinhAnh'=>'images/san-pham/VP004',
@@ -48,7 +49,7 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
             'ldtMaLoai'=>1,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'PT001',
             'ldtTenSanPham'=>'cay thiet moc lan',
             'ldtHinhAnh'=>'images/san-pham/PT001',
@@ -57,7 +58,7 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
             'ldtMaLoai'=>3,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'PT002',
             'ldtTenSanPham'=>'cay truong sinh',
             'ldtHinhAnh'=>'images/san-pham/PT002',
@@ -66,7 +67,7 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
             'ldtMaLoai'=>3,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'PT003',
             'ldtTenSanPham'=>'cay hanh phuc',
             'ldtHinhAnh'=>'images/san-pham/PT003',
@@ -75,7 +76,7 @@ class ldt__SAN_PHAMTableSeeder extends Seeder
             'ldtMaLoai'=>3,
             'ldtTrangThai'=>0
         ]);
-        DB::table('ldt_san_pham')->insert([
+        DB::table('LDT_SAN_PHAM')->insert([
             'ldtMaSanPham'=>'PT004',
             'ldtTenSanPham'=>'cay hoa nhai',
             'ldtHinhAnh'=>'images/san-pham/PT004',

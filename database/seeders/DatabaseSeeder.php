@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
 
        $this->call([
             ldt_QUAN_TRITableSeeder::class,
-            ldt_SAN_PHAMTableSeeder::class,
+            ldt__SAN_PHAMTableSeeder::class,
             ldt_LOAI_SAN_PHAMTableSeeder::class,
         ]);
     }

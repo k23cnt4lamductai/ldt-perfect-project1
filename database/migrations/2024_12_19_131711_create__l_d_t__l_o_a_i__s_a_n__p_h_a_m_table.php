@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('LDT_LOAI_SAN', function (Blueprint $table) {
             $table->id();
-            $table->string('vklMaLoai',255)->unique();
-            $table->string('vklTenLoai',255);
-            $table->tinyInteger('vklTrangThai');
+            $table->string('ldtMaLoai',255)->unique();
+            $table->string('ldtTenLoai',255);
+            $table->tinyInteger('ldtTrangThai');
             $table->timestamps();
         });
     }
